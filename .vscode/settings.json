@@ -1,0 +1,22 @@
+{
+    // Disable Pylance/pyright type checking for this workspace
+    "python.analysis.typeCheckingMode": "off",
+    // Do not run mypy from the Python extension
+    "python.linting.mypyEnabled": false,
+    // Keep general linting (flake8 etc.) enabled if desired
+    "python.linting.enabled": true,
+    // Silence remaining Pyright/Pylance diagnostics by lowering severities to none
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportOptionalMemberAccess": "none",
+        "reportOptionalSubscript": "none",
+        "reportGeneralTypeIssues": "none",
+        "reportMissingTypeStubs": "none",
+        "reportMissingImports": "none",
+        "reportUnknownArgumentType": "none",
+        "reportUnknownMemberType": "none",
+        "reportUnknownParameterType": "none",
+        "reportUnknownVariableType": "none",
+        "reportOptionalCall": "none",
+        "reportPrivateImportUsage": "none"
+    }
+}

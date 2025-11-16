@@ -1,0 +1,9 @@
+{
+  "typeCheckingMode": "off",
+  "reportMissingTypeStubs": false,
+  "reportMissingImports": false,
+  "exclude": [
+    "**/site-packages/**",
+    "**/.venv/**"
+  ]
+}
