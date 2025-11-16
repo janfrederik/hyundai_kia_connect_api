@@ -1,0 +1,42 @@
+[project]
+name = "hyundai_kia_connect_api"
+version = "3.49.3"
+description = "Python Boilerplate contains all the boilerplate you need to create a Python package."
+readme = "README.rst"
+license = { text = "MIT license" }
+authors = [{ name = "Fuat Akgun", email = "fuatakgun@gmail.com" }]
+keywords = ["hyundai_kia_connect_api"]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "beautifulsoup4>=4.10.0",
+    "requests",
+    "certifi>=2024.6.2",
+    "tzdata>=2025.2",
+]
+
+[project.optional-dependencies]
+google = ["geopy>=2.2.0"]
+dev = ["pytest>=3"]
+
+[project.scripts]
+bluelink = "hyundai_kia_connect_api.bluelink:main"
+
+[project.urls]
+Homepage = "https://github.com/Hyundai-Kia-Connect/hyundai_kia_connect_api"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["hyundai_kia_connect_api"]
+
+[tool.pytest.ini_options]
+addopts = "--ignore=setup.py"

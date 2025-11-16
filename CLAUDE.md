@@ -1,0 +1,1 @@
+- Follow instructions from ~/.claude/python.md scrupulously
